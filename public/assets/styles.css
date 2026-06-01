@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1a1a2e;
+  font-size: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #16213e;
+  font-size: 1.2rem;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 150px;
+}
+
+.formulario input:focus {
+  outline: none;
+  border-color: #0f3460;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#btnAgregar {
+  background-color: #0f3460;
+  color: white;
+}
+
+#btnAgregar:hover:not(:disabled) {
+  background-color: #16213e;
+}
+
+.btn-disponible {
+  background-color: #28a745;
+  color: white;
+  margin-right: 5px;
+}
+
+.btn-disponible.no-disponible {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #555;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.badge.disponible {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge.no-disponible {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Mensajes */
+.mensaje {
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mensaje.exito {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.mensaje.error-msg {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.error {
+  color: #dc3545;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.cargando {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+.oculto {
+  display: none;
+}
