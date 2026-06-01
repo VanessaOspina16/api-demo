@@ -1,0 +1,28 @@
+{
+  "name": "api-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "node src/index.js",
+  "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanessaOspina16/api-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VanessaOspina16/api-demo/issues"
+  },
+  "homepage": "https://github.com/VanessaOspina16/api-demo#readme"
+}
