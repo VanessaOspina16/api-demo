@@ -7,27 +7,27 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
   <div class="container">
-    <h1>🖥️ Tienda de Tecnología</h1>
 
-    <!-- Mensajes de éxito o error -->
-    <div id="mensaje" class="mensaje oculto"></div>
+    <header>
+      <h1>⚡ TechStore</h1>
+      <p>Panel de gestión de inventario</p>
+    </header>
 
-    <!-- Formulario para agregar producto -->
+    <div id="mensaje" class="oculto"></div>
+
     <div class="card">
-      <h2>Agregar Producto</h2>
+      <h2>➕ Nuevo Producto</h2>
       <div class="formulario">
         <input type="text" id="nombre" placeholder="Nombre del producto">
-        <input type="number" id="precio" placeholder="Precio">
-        <button id="btnAgregar">Agregar Producto</button>
+        <input type="number" id="precio" placeholder="Precio en pesos">
+        <button id="btnAgregar">Agregar</button>
       </div>
       <div id="errorFormulario" class="error oculto"></div>
     </div>
 
-    <!-- Tabla de productos -->
     <div class="card">
-      <h2>Catálogo de Productos</h2>
+      <h2>📦 Catálogo</h2>
       <div id="cargando" class="cargando">Cargando productos...</div>
       <table id="tablaProductos" class="oculto">
         <thead>
@@ -35,15 +35,15 @@
             <th>ID</th>
             <th>Nombre</th>
             <th>Precio</th>
-            <th>Disponible</th>
+            <th>Estado</th>
             <th>Acciones</th>
           </tr>
         </thead>
         <tbody id="cuerpoTabla"></tbody>
       </table>
     </div>
-  </div>
 
+  </div>
   <script src="assets/app.js"></script>
 </body>
 </html>

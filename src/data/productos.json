@@ -1,5 +1,26 @@
 [
-  { "id": 1, "nombre": "Teclado mecanico", "precio": 150000, "disponible": true },
-  { "id": 2, "nombre": "Mouse inalambrico", "precio": 80000, "disponible": true },
-  { "id": 3, "nombre": "Monitor 24 pulgadas", "precio": 750000, "disponible": false }
+  {
+    "id": 2,
+    "nombre": "Mouse inalambrico",
+    "precio": 80000,
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "nombre": "Monitor 24 pulgadas",
+    "precio": 750000,
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "nombre": "Mouse inalambrico",
+    "precio": 80000,
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "nombre": "Teclado",
+    "precio": 150000,
+    "disponible": true
+  }
 ]
